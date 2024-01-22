@@ -12,11 +12,15 @@
         <h2>Depósitos</h2>
         <form id="form-deposito">
             <input type="text" id="nome-Beneficiario" required placeholder="Nome completo do Beneficiário" />
+            <p class="error-message">
+                O nome precisa ser completo
+            </p>
             <input type="number" id="número-conta" required placeholder="Número da conta" />
             <input type="number" id="valor-depósito" required placeholder="Valor" />
             <textarea placeholder="Descrição (opcional)" id="descriçao"></textarea>
             <button id="btn-depositar" type="submit">Depositar</button> 
         </form>
+        <p class="success-message"></p>
     </div>
     <script src="./main.js"></script>
 </body>
